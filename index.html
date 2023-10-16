@@ -1,41 +1,64 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="main.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+        .logo {
+            width: 5em;
+        }
+
+        :root {
+            font-size: 0.65em;
+        }
+    </style>
 </head>
 
 <body>
-    <div class="container">
-        <form action="">
-            <fieldset>
+    <div class="container-fluid min-vh-100 d-flex flex-fill">
+        <div class="row flex-fill">
+            <div class="col-sm-5 p-0">
+                <img class="img-fluid w-100 h-100 object-fit-cover" src="./assets/img/fondo.jpeg" alt="">
+            </div>
 
-                <legend>Formulario de accesos</legend>
-                <fieldset>
-                    <legend>Correo electronico</legend>
-                    <input type="text">
-                </fieldset>
-                <fieldset>
-                    <legend>Contraseña</legend>
-                    <input type="text">
-                </fieldset>
+            <div class="col-sm-6 d-flex p-3 flex-column justify-content-center align-items-center flex-fill">
+                <div class="row">
+                    <div class="row mb-3">
+                        <img class="img-fluid logo" src="./assets/img/lego_logo.png" alt="">
+                    </div>
+                    <div class="row">
+                        <form>
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp">
+                                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputPassword1" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1">
+                            </div>
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                            </div>
     
-                <ul>
-                    <li class="item-1"><input type="checkbox">Administrador</input></li>
-                    <li class="item-2"><input type="checkbox">Gerente</input></li>
-                    <li class="item-3"><input type="checkbox">Propietario</input></li>
-                    <li class="item-4"><input type="checkbox">Agente de ventas</input></li>
-                    <li class="item-5"><input type="checkbox">Prospecto</input></li>
-                </ul>
-                <button type="button">Acceder</button>
-                <a href="#">¿Olvidaste tu contraseña?</a>
-            </fieldset>
-        </form>
+                            <button type="submit" class="btn btn-primary w-100">Submit</button>
+                        </form>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
     </div>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
